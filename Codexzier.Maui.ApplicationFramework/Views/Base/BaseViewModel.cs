@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel;
-using System.Windows.Input;
+using Codexzier.Maui.ApplicationFramework.Components.Navigator;
 
 namespace Codexzier.Maui.ApplicationFramework.Views.Base
 {
@@ -8,5 +8,7 @@ namespace Codexzier.Maui.ApplicationFramework.Views.Base
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected void OnNotifyPropertyChanged(string propertyName) => this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        
+        protected INavigationService NavigationService { get; } = new NavigationService();
     }
 }
