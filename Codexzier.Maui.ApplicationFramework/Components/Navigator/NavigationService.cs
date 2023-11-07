@@ -17,12 +17,12 @@ public class NavigationService : INavigationService
 
     public void LoadMenu<TView>() where TView : ContentView
     {
-        this._menuContentPresenter.Content = Activator.CreateInstance<TView>().Content;
+        this._menuContentPresenter.Content = Activator.CreateInstance<TView>();
     }
 
     public void NavigateTo<TView>() where TView : ContentView
     {
-        this._mainContentPresenter.Content = Activator.CreateInstance<TView>().Content;
+        this._mainContentPresenter.Content = Activator.CreateInstance<TView>();
     }
 
     public void SetMenuContent(ContentPresenter cp) => this._menuContentPresenter = cp;

@@ -4,12 +4,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:menu="clr-namespace:MauiApplicationTemplate.Views.Menu"
              x:Class="MauiApplicationTemplate.Views.Menu.MenuView"
-             WidthRequest="100" HeightRequest="100">
+             Background="Green"
+             HorizontalOptions="FillAndExpand">
     <ContentView.BindingContext>
         <menu:MenuViewModel />
     </ContentView.BindingContext>
     <ContentView.Content>
-        <HorizontalStackLayout>
+        <HorizontalStackLayout HorizontalOptions="Start">
             <Button Text="Content 1" Command="{Binding CommandOpenContent1}" HorizontalOptions="Center" />
             <Button Text="Content 2" Command="{Binding CommandOpenContent2}" HorizontalOptions="Center" />
         </HorizontalStackLayout>

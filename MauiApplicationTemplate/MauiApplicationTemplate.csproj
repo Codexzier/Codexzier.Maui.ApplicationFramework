@@ -56,4 +56,10 @@
       <ProjectReference Include="..\Codexzier.Maui.ApplicationFramework\Codexzier.Maui.ApplicationFramework.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <MauiXaml Update="Resources\Styles\Styles.xaml">
+        <SubType>Designer</SubType>
+      </MauiXaml>
+    </ItemGroup>
+
 </Project>

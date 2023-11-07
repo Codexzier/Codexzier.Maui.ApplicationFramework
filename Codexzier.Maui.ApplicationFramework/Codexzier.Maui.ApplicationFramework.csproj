@@ -29,4 +29,8 @@
 	  </MauiXaml>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Resources\Styles\" />
+	</ItemGroup>
+
 </Project>
