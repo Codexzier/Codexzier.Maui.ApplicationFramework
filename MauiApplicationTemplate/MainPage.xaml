@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiApplicationTemplate.MainPage">
+             x:Class="MauiApplicationTemplate.MainPage"
+             xmlns:menu="clr-namespace:MauiApplicationTemplate.Views.Menu"
+             xmlns:mauiApplicationTemplate="clr-namespace:MauiApplicationTemplate"
+             Loaded="ContentPage_Loaded">
+    <ContentPage.BindingContext>
+        <mauiApplicationTemplate:MainPageViewModel />
+    </ContentPage.BindingContext>
 
     <ScrollView>
         <VerticalStackLayout
@@ -9,31 +15,28 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+            <menu:MenuView />
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+            <ContentPresenter x:Name="MenuContent" 
+                              MinimumHeightRequest="100" 
+                              MinimumWidthRequest="100" 
+                              HorizontalOptions="Fill" 
+                              Background="Black" >
+                <ContentPresenter.Content>
+                    <menu:MenuView />
+                </ContentPresenter.Content>
+            </ContentPresenter>
+            <ContentPresenter x:Name="MainContent" 
+                              MinimumHeightRequest="200" 
+                              MinimumWidthRequest="100" 
+                              HorizontalOptions="Fill" 
+                              VerticalOptions="Fill" 
+                              Background="Green" 
+                              Visual="Default" 
+                              IsVisible="true" />
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+            <Button Text="Click Me" Clicked="Button_Clicked" />
+            <Button x:Name="testbutton1" Text="Execute by command" Command="{Binding ExecuteCommand}" />
 
         </VerticalStackLayout>
     </ScrollView>

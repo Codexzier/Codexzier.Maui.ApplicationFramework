@@ -1,23 +1,34 @@
-﻿namespace MauiApplicationTemplate;
+﻿using Codexzier.Maui.ApplicationFramework.Components.Navigator;
+using MauiApplicationTemplate.Views.Conntent1;
+using MauiApplicationTemplate.Views.Menu;
+
+namespace MauiApplicationTemplate;
 
 public partial class MainPage : ContentPage
 {
-    int count = 0;
-
+    private MainPageViewModel _viewModel;
+    
     public MainPage()
     {
-        InitializeComponent();
+        this.InitializeComponent();
+        
+        this._viewModel = (MainPageViewModel)this.BindingContext;
+        
+        var nav = NavigationService.GetInstance();
+        
+        nav.SetMenuContent(this.MenuContent);
+        nav.SetMainContent(this.MainContent);
     }
 
-    private void OnCounterClicked(object sender, EventArgs e)
+    private void ContentPage_Loaded(object sender, EventArgs e)
     {
-        count++;
+        var nav = NavigationService.GetInstance();
+        nav.LoadMenu<MenuView>();
+    }
 
-        if (count == 1)
-            CounterBtn.Text = $"Clicked {count} time";
-        else
-            CounterBtn.Text = $"Clicked {count} times";
-
-        SemanticScreenReader.Announce(CounterBtn.Text);
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+        var nav = NavigationService.GetInstance();
+        nav.NavigateTo<Content1View>();
     }
 }

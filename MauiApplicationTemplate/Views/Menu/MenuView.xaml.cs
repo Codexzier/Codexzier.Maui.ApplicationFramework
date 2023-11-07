@@ -29,8 +29,8 @@ internal class MenuViewModel : BaseViewModel
 
     public MenuViewModel()
     {
-        this.CommandOpenContent1 = new Command(() => this.NavigationService.NavigateTo<Content1View>());
-        this.CommandOpenContent2 = new Command(() => this.NavigationService.NavigateTo<Content2View>());
+        this.CommandOpenContent1 = new Command(() => this.Navigation.NavigateTo<Content1View>());
+        this.CommandOpenContent2 = new Command(() => this.Navigation.NavigateTo<Content2View>());
     }
     
     public ICommand CommandOpenContent1

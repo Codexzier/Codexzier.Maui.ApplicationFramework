@@ -2,9 +2,25 @@
 
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MauiApplicationTemplate.Views.Conntent1"
              x:Class="MauiApplicationTemplate.Views.Conntent1.Content1View">
-    <Label Text="Content View one" 
-           TextColor="{StaticResource Black}" 
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
+    <ContentView.BindingContext>
+        <local:Content1ViewModel />
+    </ContentView.BindingContext>
+    <ContentView.Content>
+        <VerticalStackLayout>
+            <Label Text="Content View one" 
+               TextColor="{StaticResource Black}" 
+               VerticalOptions="Center"
+               HorizontalOptions="Center" />
+
+            <Button Text="Test" 
+                    WidthRequest="100" 
+                    HeightRequest="20" 
+                    Clicked="Button_Clicked"  />
+            
+            <Button Text="With Command" 
+                    Command="{Binding CommandTest, Source={RelativeSource Mode=TemplatedParent}}" />
+        </VerticalStackLayout>
+    </ContentView.Content>
 </ContentView>
