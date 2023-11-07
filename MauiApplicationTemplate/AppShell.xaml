@@ -7,8 +7,14 @@
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
-        Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage" >
+        <ShellContent.Style>
+            <Style TargetType="ShellContent">
+                <Setter Property="Title" Value="Application Framework Template" />
+                <Setter Property="ToolTipProperties.Text" Value="False" />
+            </Style>
+        </ShellContent.Style>
+    </ShellContent>
 
 </Shell>
