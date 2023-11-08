@@ -1,4 +1,6 @@
-﻿namespace MauiApplicationTemplate.Views.Content2;
+﻿using Codexzier.Maui.ApplicationFramework.Components.Data;
+
+namespace MauiApplicationTemplate.Views.Content2;
 
 public partial class Content2View : ContentView
 {
@@ -8,6 +10,6 @@ public partial class Content2View : ContentView
     {
         this.InitializeComponent();
 
-        this._ViewModel = (Content2ViewModel) this.BindingContext;
+        ViewModelManager.Load<Content2ViewModel>(vm => this.BindingContext = vm);
     }
 }

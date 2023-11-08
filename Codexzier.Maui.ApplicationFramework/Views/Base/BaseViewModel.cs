@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using Codexzier.Maui.ApplicationFramework.Components.Data;
 using Codexzier.Maui.ApplicationFramework.Components.Navigator;
 
 namespace Codexzier.Maui.ApplicationFramework.Views.Base

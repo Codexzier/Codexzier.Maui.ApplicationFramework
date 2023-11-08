@@ -2,10 +2,58 @@
 
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MauiApplicationTemplate.Views.Content2;assembly=MauiApplicationTemplate"
              x:Class="MauiApplicationTemplate.Views.Content2.Content2View"
              Background="DarkRed">
-    <Label Text="Content View two" 
+    <VerticalStackLayout>
+        <Label Text="Content View two" 
            TextColor="{StaticResource Black}" 
            VerticalOptions="Center"
            HorizontalOptions="Center" />
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" 
+                   Grid.Column="0" 
+                   Text="Option 1" 
+                   TextColor="{StaticResource Black}" 
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center" />
+            
+            <CheckBox Grid.Column="1"
+                      Grid.Row="0"
+                      IsChecked="{Binding OptionIsSet01}"
+                      Background="Violet" />
+
+            <Label Grid.Row="1" 
+                   Grid.Column="0" 
+                   Text="Option 2" 
+                   TextColor="{StaticResource Black}" 
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center" />
+            
+            <CheckBox Grid.Column="1"
+                      Grid.Row="1" IsChecked="{Binding OptionIsSet02}" />
+
+        </Grid>
+        
+
+        <Label Text="{Binding LabelResultOption}" 
+           TextColor="{StaticResource Black}" 
+           VerticalOptions="Center"
+           HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+    
+    
 </ContentView>

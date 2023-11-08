@@ -1,4 +1,5 @@
-﻿using Codexzier.Maui.ApplicationFramework.Components.Navigator;
+﻿using Codexzier.Maui.ApplicationFramework.Components.Data;
+using Codexzier.Maui.ApplicationFramework.Components.Navigator;
 
 namespace MauiApplicationTemplate.Views.Conntent1;
 
@@ -10,6 +11,6 @@ public partial class Content1View : ContentView
     {
         this.InitializeComponent();
 
-        this._viewModel = (Content1ViewModel) this.BindingContext;
+        ViewModelManager.Load<Content1ViewModel>(vm => this.BindingContext = vm);
     }
 }
