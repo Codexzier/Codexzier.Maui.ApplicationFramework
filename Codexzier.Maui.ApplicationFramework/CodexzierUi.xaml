@@ -4,6 +4,7 @@
              x:Class="Codexzier.Maui.ApplicationFramework.CodexzierUi">
 
     <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
         <ResourceDictionary Source="Resources/Styles/ColorsCMA.xaml" />
     </ResourceDictionary.MergedDictionaries>
 

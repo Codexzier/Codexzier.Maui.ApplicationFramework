@@ -22,5 +22,4 @@
     <Color x:Key="ColorGrayLighter">#FFB8B8B8</Color>
     <Color x:Key="ColorGraySmoke">#FFDADADA</Color>
 
-
 </ResourceDictionary>

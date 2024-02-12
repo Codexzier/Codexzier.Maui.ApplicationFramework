@@ -4,6 +4,6 @@ public partial class CodexzierUi : ResourceDictionary
 {
 	public CodexzierUi()
 	{
-		InitializeComponent();
+		this.InitializeComponent();
 	}
 }

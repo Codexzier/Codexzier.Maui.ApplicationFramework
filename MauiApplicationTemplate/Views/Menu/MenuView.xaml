@@ -10,7 +10,7 @@
         <menu:MenuViewModel />
     </ContentView.BindingContext>
     <ContentView.Content>
-        <VerticalStackLayout HorizontalOptions="Start">
+        <VerticalStackLayout HorizontalOptions="Start" Background="{StaticResource Gray500}">
             <Button Text="Content 1" Command="{Binding CommandOpenContent1}" HorizontalOptions="Center" />
             <Button Text="Content 2" Command="{Binding CommandOpenContent2}" HorizontalOptions="Center" />
         </VerticalStackLayout>

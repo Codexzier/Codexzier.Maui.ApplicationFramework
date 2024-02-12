@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codexzier.Maui.ApplicationF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiApplicationTemplate", "MauiApplicationTemplate\MauiApplicationTemplate.csproj", "{D6861962-2EAA-4111-BB0A-D58B1E1CA9CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{9955E5ED-FCF9-45D2-9E2F-E9527784129D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiLib1", "MauiLib1\MauiLib1.csproj", "{925593B8-3104-49FD-8710-0527890E7A4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,14 @@ Global
 		{D6861962-2EAA-4111-BB0A-D58B1E1CA9CE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{D6861962-2EAA-4111-BB0A-D58B1E1CA9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6861962-2EAA-4111-BB0A-D58B1E1CA9CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9955E5ED-FCF9-45D2-9E2F-E9527784129D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9955E5ED-FCF9-45D2-9E2F-E9527784129D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9955E5ED-FCF9-45D2-9E2F-E9527784129D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9955E5ED-FCF9-45D2-9E2F-E9527784129D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{925593B8-3104-49FD-8710-0527890E7A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{925593B8-3104-49FD-8710-0527890E7A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{925593B8-3104-49FD-8710-0527890E7A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{925593B8-3104-49FD-8710-0527890E7A4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
