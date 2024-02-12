@@ -2,8 +2,8 @@
 
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:MauiApplicationTemplate.Views.Conntent1"
-             x:Class="MauiApplicationTemplate.Views.Conntent1.Content1View"
+             xmlns:local="clr-namespace:MauiApplicationTemplate.Views.Content1"
+             x:Class="MauiApplicationTemplate.Views.Content1.Content1View"
              Background="DarkBlue">
     <ContentView.Content>
         <VerticalStackLayout>
@@ -17,7 +17,13 @@
                     Command="{Binding CommandTest}" 
                     WidthRequest="150" 
                     HorizontalOptions="Start"  />
-            
+
+
+            <Button Text="Open Message" 
+                    Command="{Binding CommandMessageBox}" 
+                    WidthRequest="150" 
+                    HorizontalOptions="Start"  />
+
         </VerticalStackLayout>
     </ContentView.Content>
 </ContentView>

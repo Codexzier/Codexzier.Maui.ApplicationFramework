@@ -8,6 +8,7 @@ public class NavigationService : INavigationService
     
     private ContentPresenter _menuContentPresenter;
     private ContentPresenter _mainContentPresenter;
+    private ContentPresenter _messageBoxPresenter;
 
     private NavigationService()
     {   
@@ -29,7 +30,13 @@ public class NavigationService : INavigationService
 
     public void SetMainContent(ContentPresenter cp) => this._mainContentPresenter = cp;
 
-   
+    public void SetMessageBoxContent(ContentPresenter cp) => this._messageBoxPresenter = cp;
+
+    internal void ShowMessageBox<TView>() where TView : ContentView
+    {
+        this._messageBoxPresenter.IsVisible = true;
+        this._messageBoxPresenter.Content = Activator.CreateInstance<TView>();
+    }
 }
 
 public interface INavigationService

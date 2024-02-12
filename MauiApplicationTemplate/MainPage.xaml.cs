@@ -14,6 +14,8 @@ public partial class MainPage : ContentPage
         
         nav.SetMenuContent(this.MenuContent);
         nav.SetMainContent(this.MainContent);
+
+        nav.SetMessageBoxContent(this.MessageBoxContent);
     }
 
     private void ContentPage_Loaded(object sender, EventArgs e)
