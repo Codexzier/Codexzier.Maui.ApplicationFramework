@@ -4,7 +4,7 @@ namespace MauiApplicationTemplate.Views.Content2;
 
 public partial class Content2View : ContentView
 {
-    private Content2ViewModel _ViewModel;
+    private Content2ViewModel _viewModel;
 
     public Content2View()
     {
