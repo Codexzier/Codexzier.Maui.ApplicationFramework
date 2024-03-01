@@ -11,6 +11,7 @@
         Route="MainPage" >
         <ShellContent.Style>
             <Style TargetType="ShellContent">
+                <!-- Name der Anwendung festlegen -->
                 <Setter Property="Title" Value="Application Framework Template" />
                 <Setter Property="ToolTipProperties.Text" Value="False" />
             </Style>

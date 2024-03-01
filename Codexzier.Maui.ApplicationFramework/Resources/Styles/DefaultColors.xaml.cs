@@ -1,8 +1,8 @@
 namespace Codexzier.Maui.ApplicationFramework.Resources.Styles;
 
-public partial class ThemeDefault : ResourceDictionary
+public partial class DefaultColors : ResourceDictionary
 {
-	public ThemeDefault()
+	public DefaultColors()
 	{
 		InitializeComponent();
 	}

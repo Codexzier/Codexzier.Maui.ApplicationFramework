@@ -57,9 +57,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <MauiXaml Update="Resources\Styles\Styles.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
+      <Folder Include="Resources\Styles\" />
     </ItemGroup>
 
 </Project>

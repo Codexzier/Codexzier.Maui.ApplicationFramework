@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApplicationTemplate.MainPage"
-             Loaded="ContentPage_Loaded">
+             Loaded="ContentPage_Loaded"
+             Background="{AppThemeBinding Light={StaticResource ThemeColorLightBackground}, Dark={StaticResource ThemeColorDarkBackground}}">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -27,7 +28,6 @@
                           MinimumWidthRequest="100" 
                           HorizontalOptions="Fill" 
                           VerticalOptions="FillAndExpand" 
-                          Background="Green" 
                           Visual="Default" 
                           IsVisible="true" />
 
@@ -36,7 +36,7 @@
                           Grid.RowSpan="2" 
                           HorizontalOptions="FillAndExpand" 
                           IsVisible="False"
-                          Background="red" />
+                          Background="{StaticResource ThemeColorMessageboxBackground}" />
 
     </Grid>
 

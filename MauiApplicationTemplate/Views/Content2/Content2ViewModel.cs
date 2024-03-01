@@ -7,6 +7,7 @@ internal class Content2ViewModel : BaseViewModel
     private bool _optionIsSet01;
     private bool _optionIsSet02;
     private string _labelResultOption = "Dies ist ein Test";
+    private string _editorText;
 
     public bool OptionIsSet01
     {
@@ -35,6 +36,16 @@ internal class Content2ViewModel : BaseViewModel
         {
             _labelResultOption = value;
             this.OnNotifyPropertyChanged(nameof(this.LabelResultOption));
+        }
+    }
+
+    public string EditorText
+    {
+        get => this._editorText;
+        set
+        {
+            this._editorText = value;
+            this.OnNotifyPropertyChanged(nameof(this.EditorText));
         }
     }
 }

@@ -12,13 +12,10 @@
                 <!-- Framework Styles -->
                 <ResourceDictionary>
                     <ResourceDictionary.MergedDictionaries>
-                        <theme1:CodexzierUi />
+                        <theme1:ThemeCyberpunk />
                     </ResourceDictionary.MergedDictionaries>
                 </ResourceDictionary>
 
-                <!-- Locale Styles-->
-                
-                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

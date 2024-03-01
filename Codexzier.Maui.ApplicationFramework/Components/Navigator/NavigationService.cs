@@ -32,10 +32,18 @@ public class NavigationService : INavigationService
 
     public void SetMessageBoxContent(ContentPresenter cp) => this._messageBoxPresenter = cp;
 
-    internal void ShowMessageBox<TView>() where TView : ContentView
+    internal void ShowMessageBox<TView>(out TView contentView) where TView : ContentView
     {
         this._messageBoxPresenter.IsVisible = true;
-        this._messageBoxPresenter.Content = Activator.CreateInstance<TView>();
+        contentView = Activator.CreateInstance<TView>();
+        this._messageBoxPresenter.Content = contentView;
+
+
+    }
+
+    internal void HideMessageBox<T>()
+    {
+        this._messageBoxPresenter.IsVisible = false;
     }
 }
 

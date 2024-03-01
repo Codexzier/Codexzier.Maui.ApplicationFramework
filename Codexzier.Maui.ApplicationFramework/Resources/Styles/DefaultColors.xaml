@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Codexzier.Maui.ApplicationFramework.Resources.Styles.DefaultColors">
+
+    <!-- Basis -->
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Colors.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    
+    <Color x:Key="ThemeColorLightBackground">#332E5C</Color>
+    <Color x:Key="ThemeColorLightAccentBackground">#4AA5E1</Color>
+    <Color x:Key="ThemeColorLightAccentBorder">#6A8FA8</Color>
+    <Color x:Key="ThemeColorLightTextColorContent">#8ABBDB</Color>
+    <Color x:Key="ThemeColorLightTextColorReadOnly">#8ABBDB</Color>
+    <Color x:Key="ThemeColorLightTextColorOptions">#1E435C</Color>
+    <Color x:Key="ThemeColorLightTextColorInfos">#ffcc00</Color>
+
+    <Color x:Key="ThemeColorDarkBackground">#3A4EFF</Color>
+    <Color x:Key="ThemeColorDarkAccentBackground">#4AA5E1</Color>
+    <Color x:Key="ThemeColorDarkAccentBorder">#6A8FA8</Color>
+    <Color x:Key="ThemeColorDarkTextColorContent">#8ABBDB</Color>
+    <Color x:Key="ThemeColorDarkTextColorReadOnly">#8ABBDB</Color>
+    <Color x:Key="ThemeColorDarkTextColorOptions">#1E435C</Color>
+    <Color x:Key="ThemeColorDarktTextColorInfos">#ffcc00</Color>
+
+    <Color x:Key="ThemeColorAccentHover">#ffcc00</Color>
+    <Color x:Key="ThemeColorAccentAction">#ffcc00</Color>
+
+    <Color x:Key="ThemeColorMessageboxBackground">#ccccCc</Color>
+
+
+
+
+</ResourceDictionary>

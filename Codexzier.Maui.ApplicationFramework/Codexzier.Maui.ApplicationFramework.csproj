@@ -20,7 +20,7 @@
 		<Description>A summary of my most frequently used content, which I generally always use.</Description>
 		<Copyright>Codexzier</Copyright>
 		<PackageProjectUrl>https://github.com/Codexzier/Codexzier.Maui.ApplicationFramework</PackageProjectUrl>
-		<AssemblyVersion>0.0.0.1</AssemblyVersion>
+		<AssemblyVersion>0.0.0.2</AssemblyVersion>
 		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
@@ -33,10 +33,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="CodexzierUi.xaml">
+	  <MauiXaml Update="Resources\Styles\CyberpunkColors.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Resources\Styles\ColorsCMA.xaml">
+	  <MauiXaml Update="Resources\Styles\DefaultColors.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\CyberpunkStyles.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\DefaultStyles.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ThemeCyberpunk.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ThemeDefault.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\ActiveLoading\ActivityLoadingView.xaml">

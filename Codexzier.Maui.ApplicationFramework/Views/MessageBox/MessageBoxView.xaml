@@ -19,27 +19,35 @@
               Background="Black" 
               Opacity="0.4" />
 
-        <Grid Grid.Column="1"
-              Grid.Row="1"
-              Background="Gray">
+        <Border Grid.Column="1"
+                Grid.Row="1"
+                Padding="5, 5, 5, 10">
             <VerticalStackLayout>
-                <Label Text="Hier kommt der Titel" 
+                <Border Padding="5, 5, 5, 5" Background="{StaticResource ThemeColorLightAccentBackground}">
+                    <Label Text="{Binding Title}" 
                        VerticalOptions="Center" 
                        HorizontalOptions="Center"
                        FontSize="14"
                        FontAttributes="Bold"/>
-                <Label Text="Hier kommt der text"
-                       FontSize="16"
-                       LineBreakMode="WordWrap" />
+                </Border>
+
+                <Border Padding="5, 5, 5, 5">
+                    <Label Text="{Binding Message}"
+                           Margin="30, 20, 10, 20"
+                           FontSize="16"
+                           LineBreakMode="WordWrap" />
+                </Border>
 
                 <HorizontalStackLayout HorizontalOptions="Center">
                     <Button Text="OK"
+                            MinimumWidthRequest="100"
                             Command="{Binding CommandAccept}" />
                     <Button Text="Cancel"
+                            MinimumWidthRequest="100"
                             Command="{Binding CommandCancel}" />
                 </HorizontalStackLayout>
 
             </VerticalStackLayout>
-        </Grid>
+        </Border>
     </Grid>
 </ContentView>
