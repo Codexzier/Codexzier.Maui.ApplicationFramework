@@ -1,6 +1,6 @@
 ﻿using System.Windows.Input;
 using Codexzier.Maui.ApplicationFramework.Views.Base;
-using MauiApplicationTemplate.Views.Conntent1;
+using MauiApplicationTemplate.Views.Content1;
 using MauiApplicationTemplate.Views.Content2;
 
 namespace MauiApplicationTemplate.Views.Menu;

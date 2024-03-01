@@ -5,27 +5,38 @@
              Loaded="ContentPage_Loaded">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="80" />
+            <RowDefinition Height="10" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <ContentPresenter x:Name="MenuContent" 
-                            Grid.Row="0"
-                              MinimumHeightRequest="70" 
-                              HorizontalOptions="FillAndExpand" 
-                              Background="Black" />
+                          Grid.Column="0"
+                          Grid.Row="1"
+                          MinimumHeightRequest="70" 
+                          HorizontalOptions="FillAndExpand" 
+                          Background="Black" />
 
         <ContentPresenter x:Name="MainContent" 
-                          Grid.Row="1"
-                             
-                              MinimumWidthRequest="100" 
-                              HorizontalOptions="Fill" 
-                              VerticalOptions="FillAndExpand" 
-                              Background="Green" 
-                              Visual="Default" 
-                              IsVisible="true"
-                              />
+                          Grid.Column="1"
+                          Grid.Row="1"   
+                          MinimumWidthRequest="100" 
+                          HorizontalOptions="Fill" 
+                          VerticalOptions="FillAndExpand" 
+                          Background="Green" 
+                          Visual="Default" 
+                          IsVisible="true" />
+
+        <ContentPresenter x:Name="MessageBoxContent" 
+                          Grid.ColumnSpan="2"
+                          Grid.RowSpan="2" 
+                          HorizontalOptions="FillAndExpand" 
+                          IsVisible="False"
+                          Background="red" />
 
     </Grid>
 

@@ -2,13 +2,22 @@
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MauiApplicationTemplate"
-             xmlns:theme="clr-namespace:Codexzier.Maui.ApplicationFramework;assembly=Codexzier.Maui.ApplicationFramework"
+             xmlns:theme1="clr-namespace:Codexzier.Maui.ApplicationFramework;assembly=Codexzier.Maui.ApplicationFramework"
              x:Class="MauiApplicationTemplate.App"
              >
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+               
+                <!-- Framework Styles -->
+                <ResourceDictionary>
+                    <ResourceDictionary.MergedDictionaries>
+                        <theme1:CodexzierUi />
+                    </ResourceDictionary.MergedDictionaries>
+                </ResourceDictionary>
+
+                <!-- Locale Styles-->
+                
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>

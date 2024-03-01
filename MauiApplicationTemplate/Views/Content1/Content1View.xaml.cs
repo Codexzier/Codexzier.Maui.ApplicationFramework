@@ -1,7 +1,6 @@
 ﻿using Codexzier.Maui.ApplicationFramework.Components.Data;
-using Codexzier.Maui.ApplicationFramework.Components.Navigator;
 
-namespace MauiApplicationTemplate.Views.Conntent1;
+namespace MauiApplicationTemplate.Views.Content1;
 
 public partial class Content1View : ContentView
 {
