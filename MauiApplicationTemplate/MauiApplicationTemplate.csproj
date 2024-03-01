@@ -53,11 +53,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Codexzier.Maui.ApplicationFramework\Codexzier.Maui.ApplicationFramework.csproj" />
+      <Folder Include="Resources\Styles\" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Resources\Styles\" />
+      <ProjectReference Include="..\Codexzier.Maui.ApplicationFramework\Codexzier.Maui.ApplicationFramework.csproj" />
     </ItemGroup>
 
 </Project>
