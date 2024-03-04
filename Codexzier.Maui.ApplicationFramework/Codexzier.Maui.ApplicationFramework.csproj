@@ -20,12 +20,12 @@
 		<Description>A summary of my most frequently used content, which I generally always use.</Description>
 		<Copyright>Codexzier</Copyright>
 		<PackageProjectUrl>https://github.com/Codexzier/Codexzier.Maui.ApplicationFramework</PackageProjectUrl>
-		<AssemblyVersion>0.0.0.2</AssemblyVersion>
+		<AssemblyVersion>0.0.0.4</AssemblyVersion>
 		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<FileVersion>1.0.0.1</FileVersion>
-		<Version>1.0.1</Version>
+		<FileVersion>1.0.0.4</FileVersion>
+		<Version>1.0.3</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
