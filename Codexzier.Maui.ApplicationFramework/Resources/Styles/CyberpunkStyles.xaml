@@ -64,7 +64,7 @@
                     </VisualState>
                     <VisualState x:Name="PointerOver">
                         <VisualState.Setters>
-                            <Setter Property="Background" Value="{StaticResource ThemeColorAccentHover}" />
+                            <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource ThemeColorAccentHover}, Dark={StaticResource ThemeColorAccentHover}}" />
                         </VisualState.Setters>
                     </VisualState>
                 </VisualStateGroup>
